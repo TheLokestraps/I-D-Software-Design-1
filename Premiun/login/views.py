@@ -30,3 +30,4 @@ def session(request):
     password = request.GET.get("password")
 
     return render(request,"{}/Premiun/login/templates/session.html".format(location))
+
