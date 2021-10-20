@@ -4,7 +4,7 @@ from django.template import Template, Context
 
 def saludo(request):
 
-    doc_externo = open("./Premiun/templates/pixie/index.html")
+    doc_externo = open("./templates/pixie/index.html")
     plt = Template(doc_externo.read())
     doc_externo.close()
     ctx = Context({})
