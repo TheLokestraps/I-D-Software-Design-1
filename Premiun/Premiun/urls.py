@@ -16,13 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Premiun.views import saludo
+from Premiun.views import inicio
 from login import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',saludo),
-    path('login/',views.login),
+    path('', inicio, name = 'inicio'),
+    path('login/',views.login, name = "login"),
     path('registry/',views.registry),
     path('session/',views.session)
     
