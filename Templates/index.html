@@ -25,7 +25,7 @@
       <link rel="stylesheet" href="{% static 'sock/css/jquery.mCustomScrollbar.min.css' %}"/>
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <!-- owl stylesheets --> 
+      <!-- owl stylesheets -->
       <link rel="stylesheet" href="{% static 'sock/css/owl.carousel.min.css' %}"/>
       <link rel="stylesheet" href="{% static 'sock/css/owl.theme.default.min.css' %}"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -58,7 +58,7 @@
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
-                                 <li> <a href="{% url 'login' %}">Iniciar sesión</a> </li>
+                                 <li> <a href="{% url 'account:login' %}">Iniciar sesión</a> </li>
                                  <li> <a href="about.html">About</a> </li>
                                  <li><a href="testmonial.html">Testmonial</a></li>
                                  <li><a href="clients.html">Shop</a></li>
@@ -185,10 +185,10 @@
                      <h4>Game</h4>
                   </div>
                </div>
-    
-        
-       
-         
+
+
+
+
                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                   <div class="sport_product">
                      <figure><img src="{% static 'sock/images/basketball.png' %}" alt="img"/></figure>
@@ -330,7 +330,7 @@
     <li data-target="#testimonial" data-slide-to="1"></li>
     <li data-target="#testimonial" data-slide-to="2"></li>
   </ul>
-  
+
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -364,7 +364,7 @@
                         </div>
     </div>
   </div>
-  
+
   <!-- Left and right controls -->
   <a class="carousel-control-prev" href="#testimonial" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
@@ -374,7 +374,7 @@
   </a>
 </div>
 
-                        
+
                      </div>
                   </div>
                </div>
@@ -438,7 +438,7 @@
                      <div class="input-group mb-3">
                         <input style="border-bottom-left-radius: 20px !important; border-top-left-radius: 20px !important;" type="text" class="form-control" placeholder="Enter your email">
                      <div class="input-group-append">
-                        <button style="border-top-right-radius: 20px !important; border-bottom-right-radius: 20px !important; color: #fff; padding-bottom: 10px; padding-top: 10px;" class="btn btn-primary" type="Subscribe">Subscribe</button>  
+                        <button style="border-top-right-radius: 20px !important; border-bottom-right-radius: 20px !important; color: #fff; padding-bottom: 10px; padding-top: 10px;" class="btn btn-primary" type="Subscribe">Subscribe</button>
                      </div>
                      </div>
                   </div>
@@ -449,7 +449,7 @@
          </div>
       </div>
 
-      
+
     <div id="footer" class="Address layout_padding">
        <div class="container">
           <div class="row">
@@ -478,13 +478,13 @@
                           <span class="info_icon"><img src="{% static 'sock/images/email-icon.png' %}" /></span>
                           <span style="margin-top: 21px;">demo@gmail.com</span></div>
                      </div>
-                     </div> 
+                     </div>
                   </div>
                </div>
                   <div class="menu_main">
                      <div class="menu_text">
                         <ul>
-                           <li sclass="active"><a href="#">Home</a></li>                         
+                           <li sclass="active"><a href="#">Home</a></li>
                            <li><a href="about.html">About</a></li>
                            <li><a href="testmonial.html">Testmonial</a></li>
                            <li><a href="clients.html">Shop</a></li>
@@ -512,7 +512,7 @@
       <!-- sidebar -->
       <script src="{% static 'sock/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
       <script src="{% static 'sock/js/custom.js' %}"></script>
-      <!-- javascript --> 
+      <!-- javascript -->
       <script src="{% static 'sock/js/owl.carousel.js' %}"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
       <script>
@@ -521,16 +521,16 @@
          openEffect: "none",
          closeEffect: "none"
          });
-         
+
          $(".zoom").hover(function(){
-         
+
          $(this).addClass('transition');
          }, function(){
-         
+
          $(this).removeClass('transition');
          });
          });
-         
-      </script> 
+
+      </script>
    </body>
 </html>

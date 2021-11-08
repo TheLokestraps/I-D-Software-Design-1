@@ -14,15 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from Premiun.views import inicio
-from login import views
 from django.contrib import admin
 from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', inicio, name = 'inicio'),
-    path('login/',views.login, name = "login"),
-    path('registry/',views.registry),
-    path('session/',views.session),
-    path("account/", include('Premiun.apps.account.urls', namespace='account')),
+    path('account/', include('Premiun.apps.account.urls', namespace='account')),
 
 ]
