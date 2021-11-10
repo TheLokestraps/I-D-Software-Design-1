@@ -11,4 +11,6 @@ def conocenos(request):
 def ofrecer(request):
    return render(request, "contact.html", None)
 
-
+def aviso(request):
+   mensaje = request.POST["Nombre"]
+   return render(request, "aviso.html", {"mensaje": mensaje})

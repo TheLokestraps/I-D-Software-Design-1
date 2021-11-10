@@ -63,7 +63,7 @@
                                  <li><a href="{% url 'conocenos' %}">Conócenos</a> </li>
                                  <li><a href="testmonial.html">Testmonial</a></li>
                                  <li><a href="clients.html">Shop</a></li>
-                                 <li><a style="color: #111315;">Ofrecer</a></li>
+                                 <li><a href="contact.html">Contact Us</a></li>
                                  <li class="last"><a href="#"><img src="{% static 'sock/images/search_icon.png' %}" alt="icon"/></a></li>
                               </ul>
                            </nav>
@@ -84,46 +84,14 @@
             <div class="row">
                <div class="col-md-12 ">
                   <div class="titlepage">
-                     <h2 style="text-align: center; margin-top: 45px;">Ofrece <strong style="color: #111315;">tu producto</strong></h2>
-                     <span style="text-align: center;">Si necesitas dinero y quieres ofrecer un producto a cambio, llena el siguiente formulario para que un asesor se comunique contigo.</span>
+                     <h2 style="text-align: center; margin-top: 45px;">Información <strong style="color: #111315;">correcta</strong></h2>
+                     <span style="text-align: center;">Hola {{mensaje}}, su formulario se envió correctamente, en menos de dos días hábiles un asesor se comunicará contigo.</span>
                   </div>
                </div>
             </div>
          </div>
       </div>
 
-      <div class="contact_us_2 layout_padding paddind_bottom_0">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <div class="soc_text">P</div>
-               </div>
-               <div class="col-md-6">
-                  <div class="email_btn">
-                     <form action="{% url 'aviso' %}" method="post">
-                        {% csrf_token %}
-                        <div class="form-group">
-                           <input type="text" class="form-control form-control-sm" placeholder="Nombre" name="Nombre">
-                        </div>
-                        <div class="form-group">
-                           <input  type="text" class="form-control form-control-sm" placeholder="Email" name="Email">
-                        </div>
-                        <div class="form-group">
-                           <input  type="text" class="form-control form-control-sm" placeholder="Teléfono" name="Telefono">
-                        </div>
-                        <div class="form-group">
-                           <input  type="text" class="form-control form-control-sm" placeholder="Cédula" name="Cedula">
-                        </div>
-                         <div class="submit_btn">
-                            <button type="submit" class="btn btn-primary" style="background: #081b30;">Enviar</button>
-                         </div>
-                      </form>
-                  </div>
-               </div>
-            </div>
-           
-         </div>
-      </div>
 
 
     <div id="footer" class="Address layout_padding">
