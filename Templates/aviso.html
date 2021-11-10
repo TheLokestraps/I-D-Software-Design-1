@@ -61,9 +61,8 @@
                               <ul class="menu-area-main">
                                  <li> <a href="{% url 'account:login' %}">Iniciar Sesión</a> </li>
                                  <li><a href="{% url 'conocenos' %}">Conócenos</a> </li>
-                                 <li><a href="testmonial.html">Testmonial</a></li>
                                  <li><a href="clients.html">Shop</a></li>
-                                 <li><a href="contact.html">Contact Us</a></li>
+                                 <li><a href="{% url 'ofrecer' %}">Ofrecer</a></li>
                                  <li class="last"><a href="#"><img src="{% static 'sock/images/search_icon.png' %}" alt="icon"/></a></li>
                               </ul>
                            </nav>
@@ -128,11 +127,10 @@
                   <div class="menu_main">
                      <div class="menu_text">
                         <ul>
-                           <li class="active"><a href="#">Home</a></li>                         
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="clothes.html">Clothes</a></li>
+                           <li> <a href="{% url 'account:login' %}">Iniciar sesión</a> </li>
+                           <li> <a href="{% url 'conocenos' %}">Conócenos</a> </li>
                            <li><a href="clients.html">Shop</a></li>
-                           <li><a href="contact.html">Contact Us</a></li>
+                           <li><a href="{% url 'ofrecer' %}">Ofrecer</a></li>
                         </ul>
                      </div>
                   </div>
