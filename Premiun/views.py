@@ -8,4 +8,7 @@ def inicio(request):
 def conocenos(request):
    return render(request, "about.html", None)
 
+def ofrecer(request):
+   return render(request, "contact.html", None)
+
 
