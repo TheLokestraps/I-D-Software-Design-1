@@ -23,5 +23,6 @@ urlpatterns = [
     path('ofrecer', ofrecer, name = 'ofrecer'),
     path('aviso', aviso, name = 'aviso'),
     path('account/', include('Premiun.apps.account.urls', namespace='account')),
+    path('catalogue/', include("Premiun.apps.catalogue.urls", namespace="catalogue")),
 
 ]
