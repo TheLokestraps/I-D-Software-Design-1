@@ -102,16 +102,19 @@
                      <form action="{% url 'aviso' %}" method="post">
                         {% csrf_token %}
                         <div class="form-group">
-                           <input type="text" class="form-control form-control-sm" placeholder="Nombre" name="Nombre">
+                           <input type="text" class="form-control form-control-sm" placeholder="Nombre completo" name="Nombre"  title="Campo obligatorio" required oninvalid="this.setCustomValidity('Nombre completo inválido o campo vacío')" oninput="setCustomValidity('')" maxlength="50" pattern="[a-zA-z\s]+">
                         </div>
                         <div class="form-group">
-                           <input  type="text" class="form-control form-control-sm" placeholder="Email" name="Email">
+                           <input  type="email" class="form-control form-control-sm" placeholder="Email" name="Email" title="Campo obligatorio" required oninvalid="this.setCustomValidity('Email inválido o campo vacío')" oninput="setCustomValidity('')" maxlength="40">
                         </div>
                         <div class="form-group">
-                           <input  type="text" class="form-control form-control-sm" placeholder="Teléfono" name="Telefono">
+                           <input  type="number" class="form-control form-control-sm" placeholder="Indicativo" name="Indicativo" title="Campo obligatorio" required oninvalid="this.setCustomValidity('Indicativo inválido o campo vacío')"  oninput="setCustomValidity(''); maxlengthNumber(this);"  maxlength="4" min="1" max="1000" >
                         </div>
                         <div class="form-group">
-                           <input  type="text" class="form-control form-control-sm" placeholder="Cédula" name="Cedula">
+                           <input  type="text" class="form-control form-control-sm" placeholder="Teléfono" name="Telefono" title="Campo obligatorio" required oninvalid="this.setCustomValidity('Teléfono inválido o campo vacío')" oninput="setCustomValidity('')" maxlength="20" pattern="[0-9]+"> 
+                        </div>
+                        <div class="form-group">
+                           <input  type="text" class="form-control form-control-sm" placeholder="Número de documento de identidad" name="DocumentoIdentidad" title="Campo obligatorio" required oninvalid="this.setCustomValidity('Documento de identidad inválido o campo vacío')" oninput="setCustomValidity('')" maxlength="20" pattern="[0-9]+">
                         </div>
                          <div class="submit_btn">
                             <button type="submit" class="btn btn-primary" style="background: #081b30;">Enviar</button>
@@ -206,7 +209,13 @@
          });
          
       </script> 
-
+      <script>
+         function maxlengthNumber(obj){
+            if (obj.value.length > obj.maxLength) {
+                obj.value = obj.value.slice(0, obj.maxLength);
+            }
+         }
+      </script>
 
 </body>
 </html>

@@ -13,15 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from Premiun.views import aviso, inicio, conocenos, ofrecer
+
 from django.contrib import admin
 from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', inicio, name = 'inicio'),
-    path('conocenos', conocenos, name = 'conocenos'),
-    path('ofrecer', ofrecer, name = 'ofrecer'),
-    path('aviso', aviso, name = 'aviso'),
+    path('', include('Formulario.urls')),
     path('account/', include('Premiun.apps.account.urls', namespace='account')),
     path('catalogue/', include("Premiun.apps.catalogue.urls", namespace="catalogue")),
 

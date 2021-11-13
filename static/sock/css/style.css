@@ -125,6 +125,7 @@ ol {
 
 p {
      margin: 20px;
+     margin-left: 0px;
      font-weight: 300;
      font-size: 15px;
      line-height: 24px;
@@ -1082,7 +1083,7 @@ ul.top_icon li a {
 }
 
 
-}
+
 .main-menu ul li:last-child a {
      padding-right: 0;
 }
@@ -1577,8 +1578,14 @@ input[type="checkbox"] .styled:checked+label::after,
 input[type="radio"] .styled:checked+label::after {
      color: #fff;
 }
-
-/*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #136af8 !important;
+}
+--------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 .marginii {
      margin: 154px 0px 100px 0px;
 }
@@ -1658,7 +1665,7 @@ font-weight: normal;
      background-color: #081b30;
      height: auto;
      padding: 60px 0px;
-
+     padding-bottom: 0px;
 }
 .plants .plants-box {
      background-color: #fff;
@@ -1886,8 +1893,8 @@ img.zoom {
      margin: 0px;
 }
 form {
-     background: #081b30
-     padding: 35px 30px;
+     background: rgb(255 255 255 / 50%);
+    /* padding: 35px 30px;*/
 }
 .map_section figure img {
      width: 100%;
@@ -1940,7 +1947,7 @@ form a:hover {
      margin-bottom: 12px;
      border-radius: inherit !important;
      padding: 12px 0;
-     color: #c1bebe;
+     color: #136af8;
      width: 95%;
     margin: 0 auto;
     border-left: 0px;
@@ -2342,7 +2349,7 @@ line-height: 30px;
      background-color: #081b30;
      height: auto;
      padding-top: 71px;
-     padding-bottom: 63px;
+     padding-bottom: 140px;
      text-align: center;
      font-family: apple;
      font-size: 180px;
@@ -2400,7 +2407,7 @@ line-height: 30px;
 }
 
 .address_text{
-     width: 100%;
+     width: 111%;
      text-align: center;
      margin: 0px;
      border-bottom: 2px solid #136af8;
@@ -2504,8 +2511,6 @@ border-radius: 10px;
      background-color: #136af8;
      padding-top: 20px;
      padding-bottom: 10px;
-px
-;
 }
 
 .copyright_text{
@@ -2540,14 +2545,14 @@ button.btn.btn-primary,button.btn.btn-primary:hover,button.btn.btn-primary:focus
 
 #main_slider a.carousel-control-prev {
     position: absolute;
-    left: 50px;
+    left: 25px;
     top: 40%;
 }
 
 #main_slider a.carousel-control-next {
     position: absolute;
-    left: 50px;
-    top: 50%;
+    left: 25px;
+    top: 51%;
 }
 
 #main_slider .carousel-control-prev:hover,
