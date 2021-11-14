@@ -1635,6 +1635,9 @@ input:-webkit-autofill:active {
      border-radius: 25px;
      margin-top: 20px;
 }
+.btn-primary2 {
+     max-width: 200px;
+}
 .btn-primary:hover {
      background: #ffffff;
      color: #000;
@@ -1946,6 +1949,7 @@ form a {
      width: 150px;
      flex-wrap: wrap;
 }
+
 form a:hover {
      color: #fff;
      background: #000;
@@ -2371,6 +2375,18 @@ line-height: 30px;
      height: auto;
      padding-top: 71px;
      padding-bottom: 18px;
+     text-align: center;
+     font-family: apple;
+     font-size: 180px;
+     color: #fff;
+}
+.soc_text2{
+     width: 100%;
+     float: left;
+     background-color: #081b30;
+     height: auto;
+     padding-top: 71px;
+     padding-bottom: 225px;
      text-align: center;
      font-family: apple;
      font-size: 180px;
