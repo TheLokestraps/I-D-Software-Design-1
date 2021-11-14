@@ -1,3 +1,4 @@
 from django.contrib import admin
+from Formulario.models import Formulario
 
-# Register your models here.
+admin.site.register(Formulario)

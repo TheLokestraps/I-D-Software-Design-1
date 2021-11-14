@@ -99,7 +99,7 @@
                </div>
                <div class="col-md-6">
                   <div class="email_btn">
-                     <form action="{% url 'aviso' %}" method="post">
+                     <form action="{% url 'aviso' %}" method="post" enctype="multipart/form-data">
                         {% csrf_token %}
                         <div class="form-group">
                            <input type="text" class="form-control form-control-sm" placeholder="Nombre completo" name="Nombre"  title="Campo obligatorio" required oninvalid="this.setCustomValidity('Nombre completo inválido o campo vacío')" oninput="setCustomValidity('')" maxlength="50" pattern="[a-zA-z\s]+">
@@ -116,7 +116,12 @@
                         <div class="form-group">
                            <input  type="text" class="form-control form-control-sm" placeholder="Número de documento de identidad" name="DocumentoIdentidad" title="Campo obligatorio" required oninvalid="this.setCustomValidity('Documento de identidad inválido o campo vacío')" oninput="setCustomValidity('')" maxlength="20" pattern="[0-9]+">
                         </div>
-                         <div class="submit_btn">
+                        <div class="custom-file">
+                           <label for="Foto" style="color: #136af8;"class="custom-file-input"><u>Cargar imagen</u></label>
+                           <input type="file" class="custom-file-input" style="visibility:hidden;" name="Foto" id="Foto" onchange='cambiar()' required>
+                           <label id="info" style="color: #136af8;" class="custom-file-label">No hay ninguna imagen todavía</label>
+                         </div>
+                         <div class="submit_btn submit_btn1">
                             <button type="submit" class="btn btn-primary" style="background: #081b30;">Enviar</button>
                          </div>
                       </form>
@@ -216,6 +221,11 @@
             }
          }
       </script>
-
+      <script>
+         function cambiar(){
+          var pdrs = document.getElementById('Foto').files[0].name;
+          document.getElementById('info').innerHTML = pdrs;
+         }
+      </script>
 </body>
 </html>

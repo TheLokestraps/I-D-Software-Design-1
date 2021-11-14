@@ -13,7 +13,7 @@ def ofrecer(request):
 
 def aviso(request):
   #print(request.POST["Nombre"], request.POST["Email"], request.POST["Indicativo"], request.POST["Telefono"], request.POST["DocumentoIdentidad"])
-   x = Formulario(nombreCompleto=request.POST["Nombre"], email=request.POST["Email"], indicativo= request.POST["Indicativo"], telefono= request.POST["Telefono"], docIdentidad= request.POST["DocumentoIdentidad"])
+   x = Formulario(nombreCompleto=request.POST["Nombre"], email=request.POST["Email"], indicativo= request.POST["Indicativo"], telefono= request.POST["Telefono"], docIdentidad= request.POST["DocumentoIdentidad"], imagen=request.FILES["Foto"])
    x.save()
    mensaje = request.POST["Nombre"]
    return render(request, "aviso.html", {"mensaje": mensaje})

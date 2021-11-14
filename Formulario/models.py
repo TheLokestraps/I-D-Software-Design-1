@@ -7,3 +7,4 @@ class Formulario (models.Model):
     indicativo =  models.IntegerField()
     telefono =  models.IntegerField()
     docIdentidad = models.IntegerField()
+    imagen = models.ImageField(upload_to="productos")

@@ -2358,7 +2358,7 @@ line-height: 30px;
      background-color: #081b30;
      height: auto;
      padding-top: 71px;
-     padding-bottom: 140px;
+     padding-bottom: 188px;
      text-align: center;
      font-family: apple;
      font-size: 180px;
@@ -2395,7 +2395,9 @@ line-height: 30px;
      text-align: center;
      margin-top: 60px;
 }
-
+.submit_btn1{
+     margin-top: 10px;
+}
 .contact_us_3{
      width: 100%; 
      float: left;
@@ -2628,3 +2630,8 @@ text-align: center;
 
 
 .about_pape .banner-main {margin-bottom: 60px;}
+
+* {
+  border-radius:10px;
+}
+
